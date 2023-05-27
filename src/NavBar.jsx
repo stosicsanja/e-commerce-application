@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 class NavBar extends Component {
   render() {
@@ -7,7 +7,7 @@ class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark navbar-style">
           <a className="navbar-brand" href="/#">
-            My app
+            eCommerce
           </a>
           <button
             className="navbar-toggler"
@@ -23,11 +23,32 @@ class NavBar extends Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
+
+            <li className="nav-item">
+                <Link to="/" className="nav-link" >
+                  Login
+                </Link>
+               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Home
-                </a>
-              </li>
+                <Link to="/dashboard" className="nav-link" >
+                  Dashboard
+                </Link>
+               </li>
+
+               <li className="nav-item">
+                <Link to="/customers" className="nav-link" >
+                  Customers
+                </Link>
+                </li>
+
+                <li className="nav-item">
+                <Link to="/cart" className="nav-link" >
+                  Shopping Cart
+                </Link>
+                </li>
+
+                
             </ul>
           </div>
         </nav>

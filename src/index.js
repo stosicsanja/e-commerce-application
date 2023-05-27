@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "jquery";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
+import "font-awesome/css/font-awesome.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
